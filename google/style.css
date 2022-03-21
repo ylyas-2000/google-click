@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: #000;
+}
+
+.list{
+    position: absolute;
+    left: 88%;
+    top: 10%;
+}
+
+.list i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    /* transition: all .3s ease; */
+}
+
+.problem{
+    width: 450px;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    left: 65%;
+    top: 18%;
+    border: 5px solid white;
+    display: none;
+    overflow-y: auto;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .problem{
+    display: block;
+}
+
+.problem-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.problem-item ul{
+    height: 300px;
+    margin-top: 20px;
+}
+
+.problem-item ul li a i{
+    font-size: 40px;
+    margin: 18px 0;
+}
+
+.setir-01 li a i{
+    color: red;
+}
+
+.setir-02 li a i{
+    color: burlywood;
+}
+
+.setir-03 li a i{
+    color: chocolate;
+}
+
+hr{
+    width: 380px;
+    height: 1px;
+    color: silver;
+    margin: 10px auto 50px;
+}
+
+.problem::-webkit-scrollbar{
+    width: 6px;
+}
+
+.problem::-webkit-scrollbar-track{
+    background:white;
+}
+
+.problem::-webkit-scrollbar-thumb{
+    background: silver;
+    border-radius: 5px;
+}
